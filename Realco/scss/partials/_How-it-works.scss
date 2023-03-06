@@ -1,0 +1,97 @@
+@use "../partials/mixins" as *;
+
+.How-it-works {
+    text-align: center;
+    margin-bottom: 134px;
+}
+
+.How-it-works h2{
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 1.20;
+    color: #2A2C1F;
+    margin: 110px 0 21px 0;
+    @include sm{
+        font-size: 48px;
+    }
+}
+
+.How-it-works p{
+    font-weight: 400;
+    font-size: 18px;
+    color: #65665C;
+    padding: 0 0 61px 0;
+    max-width: 754px;
+    margin: auto;
+}
+
+.boxes{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    @include md{
+        justify-content: space-between;
+    }
+    @include lg{
+        flex-wrap: nowrap;
+    }
+}
+
+.box{
+    width: 450px;
+    border: 1px solid #E7E8E3;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+    border-radius: 16px;
+    padding-top: 49px;
+    margin: 0 0 20px ;
+    @include md{
+        width: 48%;
+    }
+    @include lg{
+        width: 32%;
+    }
+}
+
+.box h3{
+    font-weight: 700;
+    font-size: 24px;
+    color: #2A2C1F;
+    padding: 72px 0 17px;
+    margin: 0;
+}
+
+.box-1 h3{
+    background: url(../images/house.svg)top no-repeat;
+}
+
+.box-2 h3{
+    background: url(../images/text.svg)top no-repeat;
+}
+
+.box-3 h3{
+    background: url(../images/key.svg)top no-repeat;
+}
+
+.box span{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #65665C;    
+    padding: 0 43px;
+    display: block;
+
+}
+.box a{
+    font-weight: 700;
+    font-size: 16px;
+    color: #2A2C1F;   
+    display: inline-block;
+    margin: 30px 0 18px; 
+    padding-right: 20px;
+    background: url(../images/chevron_right.svg)right no-repeat;
+    text-decoration: none;
+}
+
+.box a:hover{
+    border-bottom: #2A2C1F solid 1px;
+}

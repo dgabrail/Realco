@@ -1,0 +1,105 @@
+@use "../partials/mixins" as *;
+
+.realko {
+    margin-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    padding-bottom: 20px;
+    justify-content: space-between;
+}
+
+
+.main-nav {
+    overflow: hidden;
+    transition: height 1s;
+    text-align: center;
+}
+
+
+.main-nav ul {
+    margin: 0;
+    padding: 10px;
+}
+
+.nav-btn {
+    width: 32px;
+    padding-top: 7px;
+    padding-bottom: 2px;
+    border: #CF6F49 2px solid;
+    background: none;
+    margin-left: 10px;
+    border-radius: 10px;
+    display: block;
+    @include sm {
+        display: none;
+    }
+}
+
+.header li {
+    list-style: none;
+    padding: 10px;
+
+    @include sm {
+        display: inline-block;
+    }
+}
+
+.header a {
+    color: #2A2C1F;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    display: block;
+    @include sm {
+        display: inline-block;
+    }
+}
+
+.header ul a:hover {
+    text-decoration: underline;
+}
+
+.explor {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    @include sm {
+        width: auto;
+    }
+}
+
+.Explor-button {
+    background: #CF6F49;
+    border: none;
+    border-radius: 6px;
+    padding: 9px 27px;
+    color: #fff;
+}
+
+.explor button:active {
+    box-shadow: 0px 1px 5px rgb(75, 61, 61);
+}
+
+.Explor-button:hover {
+    background: #fca380;
+}
+
+.explor a {
+    display: block;
+    margin-bottom: 10px;
+    padding: 9px 21px 9px 45px;
+    border: 1px solid #E7E8E3;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+    border-radius: 6px;
+    margin-right: 24px;
+    background: url(../images/shopping_bag.svg) 21px 8px no-repeat;
+
+    @include sm {
+        display: inline-block;
+        margin-bottom: 0;
+    }
+}

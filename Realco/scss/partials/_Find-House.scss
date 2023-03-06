@@ -1,0 +1,88 @@
+@use "../partials/mixins" as *;
+
+.Find-House{
+    background: #EEEEEE;
+    margin-bottom: 110px;
+}
+
+.Find-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Find-flex img{
+    display: block;
+    width: 100%;
+    @include sm{
+        width: 50%;
+    }
+}
+
+.dream{
+    width: 100%;
+    background: url(../images/L.svg) no-repeat,
+    url(../images/R.svg)bottom right  no-repeat;
+    @include sm{
+        width: 50%;
+    }
+}
+
+.family{
+    max-width: 516px;
+    margin: auto;
+    padding: 21% 15px 10%;
+    @include lg{
+        padding-bottom: 27%;
+    }
+}
+
+.Find-House h1{
+    font-weight: 400;
+    font-size: 30px;
+    color: #2A2C1F;    
+    margin: 8px 0 21px;
+    @include lg{
+        font-size: 56px;
+    }
+}
+
+.dream  input{
+    padding: 9px 0 9px 56px ;
+    border: none;
+    border: 1px solid #E7E8E3;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+    border-radius: 6px;
+    background: url(../images/lupa.svg) 19px 10px no-repeat;
+    margin-right: 15px;
+}
+
+.dream button{
+    padding: 9px 18px 11px;
+    background: #CF6F49;
+    border-radius: 6px;
+    color: #fff;
+    border: none;
+    margin-top: 20px;
+    @include lg{
+        margin-top: 0;
+    }
+}
+
+.dream button:active{
+    box-shadow: 0px 1px 5px rgb(75, 61, 61);
+}
+
+.dream button:hover{
+    background: #fca380;
+}
+
+.dream a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 4px 12px;
+    background: #E7E8E3;
+    border-radius: 32px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #2A2C1F;
+}

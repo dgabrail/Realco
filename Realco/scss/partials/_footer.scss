@@ -1,0 +1,24 @@
+.footer{
+    background: #EEEEEE;
+    padding: 26px 0;
+}
+
+.flex-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer p{
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+.socseti{
+    float: right;
+}
+
+.socseti a{
+    margin-left: 22px;
+    text-decoration: none;
+}

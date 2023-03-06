@@ -1,0 +1,137 @@
+@use "../partials/mixins" as *;
+
+.process{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 153px;
+    @include xl{
+        justify-content: space-between;
+    }
+}
+
+.forfast{
+    width: 100%;
+    @include md{
+        width: 80%;
+    }
+    @include lg{
+        width: 45%;
+    }
+}
+
+.process img{
+    width: 100%;
+    border-radius: 16px;
+    margin-bottom: 30px;
+    @include sm{
+        width: 60%;
+    }
+    @include xl{
+        width: 45%;
+    }
+}
+
+.Quick{
+    background: #E7E8E3;
+    border-radius: 32px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #2A2C1F;
+    display: inline-block;
+    padding: 4px 12px;
+    text-decoration: none;
+}
+
+.forfast h4{
+    font-weight: 700;
+    font-size: 38px;
+    color: #2A2C1F;
+    padding: 0;
+    margin: 21px 0 29px;
+    @include sm{
+        font-size: 48px;
+    }
+}
+
+.colums{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    @include sm{
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+}
+
+.column-1{
+    width: 100%;
+    @include sm{
+        width: 40%;
+    }
+}
+
+.column-2{
+    width: 100%;
+    @include sm{
+        width: 46%;
+    }
+}
+
+.column h5{
+    font-weight: 700;
+    font-size: 20px;
+    color: #2A2C1F;    
+    padding-top: 47px;
+}
+
+.column-1 h5{
+    background: url(../images/dollar.svg) no-repeat;
+}
+
+.column-2 h5{
+    background: url(../images/list.svg) no-repeat;
+}
+
+.forfast p{
+    font-size: 18px;
+    margin: 0 0 37px;   
+    padding: 0;
+}
+
+.agent button{
+    padding: 13px 25px;
+    color: #2A2C1F;
+    border: 1px solid #E7E8E3;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+    border-radius: 6px;
+    background: #fff;
+    margin-right: 24px;
+    margin-bottom: 20px;
+    @include sm{
+        margin-bottom: 0;
+    }
+}
+
+.agent button:hover{
+    background: #fca380;
+}
+
+.agent button:active{
+    box-shadow: 0px 1px 5px rgb(75, 61, 61);
+    border: none;
+}
+
+.agent a{
+    color: #2A2C1F;
+    display: inline-block;
+    padding-right: 20px;
+    background: url(../images/chevron_right.svg)right  no-repeat;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.agent a:hover{
+    border-bottom: solid #2A2C1F 1px;
+}
